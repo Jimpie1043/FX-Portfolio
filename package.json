@@ -16,7 +16,7 @@
     "url": "git+https://github.com/Jimpie1043/portfolio-fx.git"
   },
   "author": "François-Xavier Leclerc",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "private": true,
   "bugs": {
     "url": "https://github.com/Jimpie1043/the-wheel-foundry/issues"

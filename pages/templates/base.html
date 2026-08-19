@@ -1,0 +1,18 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="{% static 'css/output.css' %}">
+    <title>{% block title %}Portfolio FX{% endblock %}</title>
+  </head>
+  <body>
+    {% include "components/navbar.html" %}
+
+    <main class="mx-auto w-full max-w-[1400px] px-4">
+      {% block content %}{% endblock %}
+    </main>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1 class="text-6xl font-bold mb-4">Hi,</h1>
+
+  <h2 class="text-xl mb-12">I'm François-Xavier Leclerc, a recent cybersecurity graduate
+    now looking to offer my services in a fulfilling IT help desk role.</h2>
+
+  <h2 class="text-xl">Recent Projects</h2>
+  <!-- N/F. List recent project cards (order: last edited) and allow users to click on them to open. -->
+  {% if projects %}
+    {% for project in projects %}
+      <a href="{% url 'projects:detail' project.pk %}">
+        {{ project.title }}
+      </a>
+    {% endfor %}
+  {% else %}
+    <p>No projects yet.</p>
+  {% endif %}
+{% endblock %}

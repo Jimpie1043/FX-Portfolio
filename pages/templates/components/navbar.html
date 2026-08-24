@@ -1,11 +1,12 @@
 <nav class="p-4 mb-8">
-  <div class="navbar mx-auto flex w-full max-w-[1400px] items-center justify-between p-4 border-b">
-    <a href="/">Portfolio FX</a>
+  <div class="navbar mx-auto flex w-full max-w-[1400px] items-center justify-between p-4 border-b border-green-700 font-semibold">
+    <a href="/">François-Xavier Leclerc</a>
 
-    <div class="navlinks flex gap-4">
-      <a href="{% url 'pages:home' %}">Home</a>
-      <a href="">Library</a>
-      <a href="">Community</a>
+    <div class="navlinks flex gap-4 select-none">
+      <a href="{% url 'pages:home' %}">Accueil</a>
+      <a href="{% url 'documentation:documentation' %}">Documentation</a>
+      <a href="">Projets</a>
+      <a href="">À propos</a>
     </div>
   </div>
 </nav>

@@ -23,5 +23,5 @@
 .navlinks a:hover {
     transition: 100ms;
     transform: scale(1.02);
-    color: rgb(39, 89, 255)
+    color: var(--color-green-700)
 }

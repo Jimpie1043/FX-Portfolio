@@ -24,7 +24,7 @@
         </div>
 
         {% if document.tags.all %}
-          <div class="flex flex-wrap gap-2 select-none">
+          <div class="flex flex-wrap gap-2 my-2 select-none">
             {% for tag in document.tags.all %}
               <span class="doc-tags text-xs rounded-full bg-gray-100 text-gray-600 px-2 py-1">{{ tag.name }}</span>
             {% endfor %}

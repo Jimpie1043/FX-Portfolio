@@ -1,0 +1,33 @@
+{% if documentation %}
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    {% for document in documentation %}
+      <div class="border rounded-lg p-4 flex flex-col gap-2">
+        {% if document.preview_image %}
+          <img src="{{ document.preview_image.url }}" alt="{{ document.title }}" class="w-full h-48 object-cover rounded">
+        {% else %}
+          <div class="w-full h-48 flex items-center justify-center bg-gray-100 rounded text-gray-400 text-sm">
+            Aucun aperçu
+          </div>
+        {% endif %}
+
+        <h3 class="text-lg font-semibold">{{ document.title }}</h3>
+        <p class="text-sm text-gray-500">{{ document.description }}</p>
+
+        {% if document.tags.all %}
+          <div class="flex flex-wrap gap-2">
+            {% for tag in document.tags.all %}
+              <span class="text-xs rounded-full bg-gray-100 text-gray-600 px-2 py-1">{{ tag.name }}</span>
+            {% endfor %}
+          </div>
+        {% endif %}
+
+        <a href="{{ document.pdf.url }}" target="_blank" rel="noopener"
+           class="mt-auto text-center border rounded px-3 py-2 text-sm hover:bg-gray-50">
+          Ouvrir le PDF
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+{% else %}
+  <p class="text-xl font-semibold">Aucun document pour l'instant.</p>
+{% endif %}

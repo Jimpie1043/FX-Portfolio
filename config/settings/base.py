@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     
     # Portfolio apps
     "pages",
+    "documentation",
 ]
 
 MIDDLEWARE = [
@@ -55,7 +56,7 @@ ROOT_URLCONF = 'config.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'pages.templates'],
+        'DIRS': [BASE_DIR / 'pages/templates', BASE_DIR / 'documentation/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

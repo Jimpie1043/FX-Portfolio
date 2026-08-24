@@ -20,8 +20,15 @@
 
 
 /* CUSTOM STYLING */
-.navlinks a:hover {
-    transition: 100ms;
-    transform: scale(1.02);
-    color: var(--color-green-700)
+.navlinks a:hover,
+.doc-tags:hover {
+  transition: 200ms;
+  translate: 0px -1px;
+  color: var(--color-green-700)
+}
+
+.open-btn:hover {
+  transition: 200ms;
+  translate: 0px -1px;
+  background-color: var(--color-gray-50);
 }

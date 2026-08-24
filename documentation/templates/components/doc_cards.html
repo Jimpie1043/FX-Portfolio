@@ -1,7 +1,7 @@
 {% if documentation %}
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
     {% for document in documentation %}
-      <div class="border rounded-lg p-4 flex flex-col gap-2">
+      <div class="border rounded-lg p-4 flex flex-col gap-2 self-start">
         {% if document.preview_image %}
           <img src="{{ document.preview_image.url }}" alt="{{ document.title }}" class="w-full h-48 object-cover rounded">
         {% else %}
@@ -13,12 +13,12 @@
         <h3 class="text-lg font-semibold">{{ document.title }}</h3>
 
         <div data-doc-description>
-          <input type="checkbox" id="desc-{{ document.pk }}" class="peer hidden">
-          <p class="text-sm text-gray-500 line-clamp-4 peer-checked:line-clamp-none" data-doc-description-text>{{ document.description|linebreaksbr }}</p>
-          <label for="desc-{{ document.pk }}" class="mt-1 hidden cursor-pointer select-none text-xs text-gray-400 peer-checked:hidden" data-doc-description-more>
+          <input type="checkbox" id="desc-{{ forloop.counter0 }}-{{ document.pk }}" class="peer hidden">
+          <p class="text-sm text-gray-500 whitespace-pre-line" data-doc-description-text>{{ document.description }}</p>
+          <label for="desc-{{ forloop.counter0 }}-{{ document.pk }}" class="mt-1 hidden block cursor-pointer select-none text-xs text-gray-400 peer-checked:hidden" data-doc-description-more>
             ▾ Voir plus
           </label>
-          <label for="desc-{{ document.pk }}" class="mt-1 hidden cursor-pointer select-none text-xs text-gray-400 peer-checked:flex">
+          <label for="desc-{{ forloop.counter0 }}-{{ document.pk }}" class="mt-1 hidden cursor-pointer select-none text-xs text-gray-400 peer-checked:flex">
             ▴ Voir moins
           </label>
         </div>

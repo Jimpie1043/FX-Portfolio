@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": ["ES2017", "DOM"],
+    "module": "ESNext",
+    "outDir": "static/js",
+    "rootDir": "static/ts",
+    "strict": true,
+    "noEmitOnError": true
+  },
+  "include": ["static/ts/**/*.ts"]
+}

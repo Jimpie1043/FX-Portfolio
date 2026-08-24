@@ -24,15 +24,15 @@
         </div>
 
         {% if document.tags.all %}
-          <div class="flex flex-wrap gap-2">
+          <div class="flex flex-wrap gap-2 select-none">
             {% for tag in document.tags.all %}
-              <span class="text-xs rounded-full bg-gray-100 text-gray-600 px-2 py-1">{{ tag.name }}</span>
+              <span class="doc-tags text-xs rounded-full bg-gray-100 text-gray-600 px-2 py-1">{{ tag.name }}</span>
             {% endfor %}
           </div>
         {% endif %}
 
         <a href="{{ document.pdf.url }}" target="_blank" rel="noopener"
-           class="mt-auto text-center border rounded px-3 py-2 text-sm hover:bg-gray-50">
+           class="open-btn mt-auto text-center border rounded px-3 py-2 text-sm">
           Ouvrir le PDF
         </a>
       </div>

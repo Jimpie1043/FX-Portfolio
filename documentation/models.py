@@ -1,6 +1,4 @@
-from io import BytesIO
-
-import fitz  # PyMuPDF
+import pymupdf
 from django.core.files.base import ContentFile
 from django.core.validators import FileExtensionValidator
 from django.db import models
@@ -61,7 +59,7 @@ class Document(models.Model):
         pdf_bytes = self.pdf.read()
         self.pdf.close()
 
-        with fitz.open(stream=pdf_bytes, filetype="pdf") as doc:
+        with pymupdf.open(stream=pdf_bytes, filetype="pdf") as doc:
             page = doc.load_page(0)
             pixmap = page.get_pixmap()
             png_bytes = pixmap.tobytes("png")

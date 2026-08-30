@@ -1,12 +1,13 @@
-<nav class="px-4 mb-8">
-  <div class="navbar mx-auto flex w-full max-w-[1400px] items-center justify-between p-4 border-b border-green-700 font-semibold">
-    <a href="/">François-Xavier Leclerc</a>
+<nav class="h-12 md:h-16 px-8 bg-white text-black dark:bg-[#16161b] dark:text-white text-sm md:text-base select-none">
+  <div class="nav-content h-full w-full mx-auto flex gap-4 max-w-7xl items-center justify-between font-semibold overflow-auto text-nowrap border-b-2 border-b-gray-950">
+    <a href="/" class="hidden md:inline">François-Xavier Leclerc</a>
 
-    <div class="navlinks flex gap-4 select-none">
+    <!-- TODO: Add URLs -->
+    <div class="navlinks flex gap-4 mx-auto md:mx-0">
       <a href="{% url 'pages:home' %}">Accueil</a>
       <a href="{% url 'documentation:documentation' %}">Documentation</a>
       <a href="">Projets</a>
-      <a href="">À propos</a>
+      <a href="">Contact</a>
     </div>
   </div>
 </nav>

@@ -1,8 +1,53 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block content %}
-  <h1 class="text-6xl font-bold text-green-700 mb-4">Bonjour,</h1>
+  <div class="section-wrapper px-1 md:px-8 bg-white text-black dark:bg-[#16161b] dark:text-white">
+    <div class="section pt-2 md:pt-8">
 
-  <h2 class="text-xl mb-12">Je suis un jeune diplômé de cybersécurité
-    cherchant à offrir mes services dans un rôle en technologies de l'information.</h2>
+      <!-- HERO SECTION -->
+      <div class="block">
+
+        <img
+          src="{% static 'images/fx.jpg' %}"
+          alt="François-Xavier Leclerc"
+          class="float-right w-1/4 ml-0 md:ml-8 mb-4 md:mb-8 md:rounded-4xl shadow-lg select-none"
+        />
+
+        <h1 class="mb-1 md:mb-4 text-xl md:text-6xl font-bold text-green-700">
+          François-Xavier Leclerc, technicien informatique
+        </h1>
+
+        <h2 class="md:mb-12 text-xs md:text-2xl">
+          Étudiant en cybersécurité avec une expérience pratique 
+          en infrastructure TI, dépannage technique, réseautique, administration de systèmes 
+          et développement web. Je m'intéresse particulièrement à la sécurité, à la fiabilité 
+          des systèmes et à la résolution de problèmes techniques concrets.
+        </h2>
+
+        <div class="flex md:mb-16">
+          <button class="bg-green-700 text-white px-4 py-2 rounded-lg my-auto w-fit hover:bg-green-800 transition-colors">
+            <!-- TODO: Add URL -->
+            <a href="">Get in touch</a>
+          </button>
+
+          <p class="flex items-center gap-1 text-sm">
+            My links
+            <span
+              class="size-4 dark:bg-gray-100"
+              aria-hidden="true"
+              style="
+                mask: url('{% static 'svg/right-arrow.svg' %}') center / contain no-repeat;
+                -webkit-mask: url('{% static 'svg/right-arrow.svg' %}') center / contain no-repeat;
+              "
+            ></span>
+          </p>
+        </div>
+
+      </div>
+
+      <!-- ABOUT SECTION -->
+
+    </div>
+  </div>
 {% endblock %}

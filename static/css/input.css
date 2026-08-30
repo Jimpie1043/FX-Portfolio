@@ -19,12 +19,89 @@
 }
 
 
-/* CUSTOM STYLING */
+
+/* ICONS */
+.svg-icon {
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: currentColor;
+
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+
+  -webkit-mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+}
+
+.logo-icon {
+  display: block;
+  background-color: currentColor;
+
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+
+  -webkit-mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: color 200ms ease;
+}
+
+/* NAVBAR */
+.navlinks a {
+  transition: color 200ms ease;
+}
+
+.social-icon:hover,
 .navlinks a:hover,
 .doc-tags:hover {
+  color: var(--color-green-700)
+}
+
+/* SECTIONS */
+.section-wrapper {
+  display: flex;
+  width: 100%;
+}
+
+.section {
+  width: 1280px;
+  max-width: 90%;
+  
+  margin: 0 auto;
+}
+
+/* CARDS */
+.card {
+  width: 100%;
+  min-height: 10rem;
+  padding: 1rem;
+
+  border-radius: 0.5rem;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.card:hover {
   transition: 200ms;
   translate: 0px -1px;
-  color: var(--color-green-700)
 }
 
 .open-btn:hover {

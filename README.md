@@ -6,10 +6,6 @@
 
 - [Tech Stack](#tech-stack)
 
-- [Current Goals](#current-1-10-goals)
-
-- [Completed Goals](#completed-goals)
-
 - [Environment Variables](#environment-variables)
 
 - [Development Setup](#development-setup)

@@ -4,6 +4,8 @@
 **This repo is a work in progress.** It will be used as a portfolio to demonstrate my technical documentation and projects.
 ## Table of Contents
 
+- [Early Look](#early-look)
+
 - [Tech Stack](#tech-stack)
 
 - [Environment Variables](#environment-variables)
@@ -13,6 +15,8 @@
 - [Development Workflow](#development-workflow)
 
 - [Production Build](#production-build)
+## Early look
+![Website image](early-look.png)
 ## Tech Stack
 
 **Frontend:** HTML, Tailwind CSS, TypeScript

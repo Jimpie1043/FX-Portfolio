@@ -3,15 +3,15 @@
 
 {% block content %}
   <!-- HERO SECTION -->
-  <div class="section-wrapper bg-white text-black dark:bg-[#16161b] dark:text-white">
-      <div class="section pt-2 md:pt-8">
+  <div class="w-full">
+      <section class="pt-2 md:pt-8">
 
         <!-- HERO CONTENT -->
         <div class="block">
 
           <!-- PROFILE IMAGE -->
           <img
-            src="{% static 'images/side-profile-no-bg.png' %}"
+            src="{% static 'images/side-profile-bg.png' %}"
             alt="François-Xavier Leclerc"
             class="float-right w-1/4 ml-0 md:ml-8 select-none"
           />
@@ -34,18 +34,18 @@
           <!-- END TITLE AND DESCRIPTION -->
 
           <!-- CONTACT BUTTONS -->
-          <div class="flex md:mb-16">
-            <button class="bg-green-700 text-white px-4 py-2 rounded-lg my-auto w-fit hover:bg-green-800 transition-colors">
+          <div class="flex md:mb-16 gap-4 md:gap-8">
+            <button class="bg-green-700 text-white px-4 py-2 rounded-lg my-auto w-fit
+            hover:bg-green-800 transition-colors cursor-pointer">
               <!-- TODO: Add URL -->
               <a href="">Get in touch</a>
             </button>
 
             <!-- TODO: Add links -->
-            <!--
             <p class="flex items-center gap-1 text-sm">
               My links
               <span
-                class="size-4 dark:bg-gray-100"
+                class="size-4 bg-black dark:bg-gray-100"
                 aria-hidden="true"
                 style="
                   mask: url('{% static 'svg/right-arrow.svg' %}') center / contain no-repeat;
@@ -53,14 +53,47 @@
                 "
               ></span>
             </p>
-            -->
+
+            <span class="flex gap-2 md:gap-4 select-none">
+              <!-- GITHUB ICON -->
+              <a href="https://github.com/Jimpie1043"
+              target="_blank" rel="noopener noreferrer"
+              class="social-icon" aria-label="GitHub">
+                <img src="{% static 'svg/github/GitHub_Invertocat_Black.svg' %}"
+                alt="GitHub" class="size-8 dark:hidden">
+                <img src="{% static 'svg/github/GitHub_Invertocat_White.svg' %}"
+                alt="GitHub" class="size-8 hidden dark:block">
+              </a>
+
+              <!-- LINKEDIN ICON -->
+              <a href="https://www.linkedin.com/in/francois-xavier-leclerc"
+              target="_blank" rel="noopener noreferrer"
+              class="social-icon" aria-label="LinkedIn">
+                <img src="{% static 'svg/linkedin/InBug-Black.png' %}"
+                alt="LinkedIn" class="size-8 dark:hidden">
+                <img src="{% static 'svg/linkedin/InBug-White.png' %}"
+                alt="LinkedIn" class="size-8 hidden dark:block">
+              </a>
+
+              <!-- EMAIL ICON -->
+              <a href="mailto:fx.leclerc05@gmail.com"
+              target="_blank" rel="noopener noreferrer"
+              class="social-icon" aria-label="Email">
+                <img src="{% static 'svg/email-black.svg' %}"
+                alt="Email" class="size-8 dark:hidden">
+                <img src="{% static 'svg/email-white.svg' %}"
+                alt="Email" class="size-8 hidden dark:block">
+              </a>
+
+            </span>
+
           </div>
           <!-- END CONTACT BUTTONS -->
 
         </div>
         <!-- END HERO CONTENT -->
 
-      </div>
+      </section>
   </div>
   <!-- END HERO SECTION -->
 

@@ -1,13 +1,16 @@
-<nav class="h-12 md:h-16 px-8 bg-white text-black dark:bg-[#16161b] dark:text-white text-sm md:text-base select-none">
-  <div class="nav-content h-full w-full mx-auto flex gap-4 max-w-7xl items-center justify-between font-semibold overflow-auto text-nowrap border-b-2 border-b-gray-950">
+<nav class="h-12 md:h-16 px-8 text-sm md:text-base select-none">
+  <div class="nav-content h-full w-full mx-auto flex gap-4 max-w-7xl
+  items-center justify-between font-semibold overflow-auto text-nowrap
+  border-b-2 border-b-gray-950">
+
     <a href="/" class="hidden md:inline">François-Xavier Leclerc</a>
 
     <!-- TODO: Add URLs -->
     <div class="navlinks flex gap-4 mx-auto md:mx-0">
-      <a href="{% url 'pages:home' %}">Home</a>
-      <a href="{% url 'documentation:documentation' %}">Documentation</a>
-      <a href="">Projects</a>
-      <a href="">Contact</a>
+      <a class="hover:text-green-700" href="{% url 'pages:home' %}">Home</a>
+      <a class="hover:text-green-700" href="{% url 'documentation:documentation' %}">Documentation</a>
+      <a class="hover:text-green-700" href="">Projects</a>
+      <a class="hover:text-green-700" href="">Contact</a>
     </div>
   </div>
 </nav>

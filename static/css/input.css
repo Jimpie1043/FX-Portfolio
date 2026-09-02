@@ -21,32 +21,21 @@
 
 
 /* ICONS */
-.svg-icon {
+.svg-icon,
+.logo-icon {
   display: block;
-  width: 1.5rem;
-  height: 1.5rem;
   background-color: currentColor;
-
   mask-position: center;
   mask-repeat: no-repeat;
   mask-size: contain;
-
   -webkit-mask-position: center;
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: contain;
 }
-
-.logo-icon {
-  display: block;
-  background-color: currentColor;
-
-  mask-position: center;
-  mask-repeat: no-repeat;
-  mask-size: contain;
-
-  -webkit-mask-position: center;
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-size: contain;
+ 
+.svg-icon {
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 .social-icon {
@@ -54,7 +43,10 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: color 200ms ease;
+}
+
+.social-icon:hover {
+  translate: 0px -1px;
 }
 
 /* NAVBAR */
@@ -62,19 +54,8 @@
   transition: color 200ms ease;
 }
 
-.social-icon:hover,
-.navlinks a:hover,
-.doc-tags:hover {
-  color: var(--color-green-700)
-}
-
 /* SECTIONS */
-.section-wrapper {
-  display: flex;
-  width: 100%;
-}
-
-.section {
+section {
   width: 1280px;
   max-width: 90%;
   

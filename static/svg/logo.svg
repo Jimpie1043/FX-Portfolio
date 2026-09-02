@@ -1,0 +1,23 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 100 100"
+  role="img"
+  aria-label="FX logo"
+>
+  <text
+    x="47"
+    y="75"
+    text-anchor="middle"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="70"
+    font-weight="900"
+    letter-spacing="-5"
+    fill="#12c608"
+    stroke="#000000"
+    stroke-width="4"
+    paint-order="stroke fill"
+    stroke-linejoin="round"
+  >
+    FX
+  </text>
+</svg>
